@@ -12,7 +12,7 @@ body{
     flex-direction: column;
 }
 .face h2{
-font-size:40px;
+    font-size:40px;
 }
 video{
     width: 720px;

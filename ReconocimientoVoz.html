@@ -4,14 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voz</title>
+    <style>
+        .botones{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .boton{
+            background-color: black;
+            padding: 12px;
+            margin: 15px;
+            color: white;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+        }
+        .boton:hover{
+            background-color: rgba(73, 73, 70, 0.541);
+        }
+        .texto{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
     <div class="botones">
-        <button id="start">Empezar a grabar</button>
-        <button id="stop">Terminar grabación</button>
-        <button id="playText">Reproducir</button>
+        <button id="start" class="boton">Empezar a grabar</button>
+        <button id="stop" class="boton">Terminar grabación</button>
+        <button id="playText" class="boton">Reproducir</button>
     </div>
-    <textarea id="texto" cols="30" rows="10"></textarea>
+    <div class="texto">
+        <textarea id="texto" cols="55" rows="20"></textarea>
+    </div> 
+    <div class="botones">
+        <button id="guardar" class="boton">Guardar</button>
+        <button id="limpiar" class="boton">Borrar</button>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

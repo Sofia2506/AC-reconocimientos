@@ -2,6 +2,7 @@ const startButton = document.getElementById("start");
 const stopButton = document.getElementById("stop");
 const texto = document.getElementById("texto");
 const playText = document.getElementById("playText");
+const limpiarButton = document.getElementById("limpiar");
 
 let recognition = new webkitSpeechRecognition();
 recognition.lang = "es-Es";
@@ -32,6 +33,10 @@ stopButton.addEventListener("click", () => {
 
 playText.addEventListener("click", () => {
     leerTexto(texto.value);
+});
+
+limpiarButton.addEventListener("click", () => {
+    texto.value = null;
 });
 
 function leerTexto(texto){
