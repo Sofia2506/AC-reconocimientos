@@ -8,20 +8,32 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(24, 23, 23, 0.589);
     flex-direction: column;
-    background: #283048;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0f2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c5364cc, #203a4394, #0f202759),url("img/fondo.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c5364d8, #203a439a, #0f202762),url("img/fondo.jpg"); 
+    background-size:cover;
+    font-family: 'Kaushan Script', cursive;
+   
 }
-.face h2{
-    font-size:40px;
+h2{
+    font-size:80px;
+    color:white;
 }
 
 canvas{
     position:absolute;
 }
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
 img{
-    width: 100px;
+    width: 300px;
     margin:10px;
+    position:absolute;
+
 }

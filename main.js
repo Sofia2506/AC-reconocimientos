@@ -1,5 +1,5 @@
 const video = document.getElementById('video');
-
+const img = document.getElementById('candado');
 Promise.all([
     faceapi.nets.faceRecognitionNet.loadFromUri('models'),
     faceapi.nets.faceLandmark68Net.loadFromUri('models'),
@@ -29,6 +29,7 @@ function startVideo(){
             console.log('Playing')
             const canvas = faceapi.createCanvasFromMedia(video)
             document.body.append(canvas)
+            img.style.display="none"
             const displaySize = { width: video.width, height: video.height }
             faceapi.matchDimensions(canvas, displaySize)
             let cont = 0
@@ -48,10 +49,10 @@ function startVideo(){
                     console.log(result.toString())
                     parseInt(cont)
                     
-                        if(result.toString().substr(0,result.toString().indexOf(" "))=='Angel'){
+                       /*  if(result.toString().substr(0,result.toString().indexOf(" "))=='Angel'){
                             cont++
-                            console.log(cont)
-                    } 
+                            console.log(cont) 
+                        } */
                     if(cont==10){
                         location.href ="ReconocimientoVoz.html";
                     }
@@ -72,7 +73,6 @@ function loadLabeledImages() {
                 console.log(label + i)
                 descriptions.push(detections.descriptor)
             }
-            document.body.append(label+'')
             return new faceapi.LabeledFaceDescriptors(label, descriptions)
         })
     )
