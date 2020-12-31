@@ -49,10 +49,10 @@ function startVideo(){
                     console.log(result.toString())
                     parseInt(cont)
                     
-                       /*  if(result.toString().substr(0,result.toString().indexOf(" "))=='Angel'){
+                        if(result.toString().substr(0,result.toString().indexOf(" "))=='Angel'){
                             cont++
                             console.log(cont) 
-                        } */
+                        }
                     if(cont==10){
                         location.href ="ReconocimientoVoz.html";
                     }

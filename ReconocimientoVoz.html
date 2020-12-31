@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voz</title>
     <link rel="stylesheet" href="vozCss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="principal">
 
-    <div class="botones">
-        <button id="start" class="boton">Empezar a grabar</button>
-        <button id="stop" class="boton">Terminar grabación</button>
-        <button id="playText" class="boton">Reproducir</button>
-    </div>
-    <div class="texto">
-        <textarea id="texto" cols="55" rows="20"></textarea>
-    </div> 
-    <div class="botones">
+        <div class="botones">
+            <button id="start" class="boton">Empezar a grabar</button>
+            <button id="stop" class="boton">Terminar grabación</button>
+            <button id="playText" class="boton">Reproducir</button>
+        </div>
+        <div class="texto">
+            <img src="img/hoja.png" alt="">
+            <textarea id="texto" cols="55" rows="20"></textarea>
+        </div> 
+        <div class="botones">
         <a href="#notaGuardada"><button id="guardar" class="boton" >Guardar</button></a>
         <button id="limpiar" class="boton">Borrar</button>
-    </div>
+        </div>
+</div>
+    <!--La ventanita emergente-->
     <div class="Super1" id="notaGuardada">
         <div class="notaGuardada">
             <div class="XContainer"><a href="#" id="x"><img src="img\letra X.png" class="X"></a></div>

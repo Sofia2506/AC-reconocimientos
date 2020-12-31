@@ -1,40 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
 .botones{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 body{
-    background: #283048;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #0f2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c5364cc, #203a4394, #0f202759),url("img/mesa.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c5364d8, #203a439a, #0f202762),url("img/mesa.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
 }
-.boton{
-    background-color: black;
-    padding: 12px;
+.botones .boton{
     margin: 15px;
+}
+
+.boton{
+    background-color: rgba(0, 0, 0, 0);
     color: white;
-    border-radius: 15px;
+    font-family: 'Kaushan Script', cursive;
+    font-size:40px;
     outline: none;
+    transition:all .5s ease;
+    padding: 12px;
     border: none;
 }
 .boton:hover{
-    background-color: rgba(73, 73, 70, 0.541);
+    background-color: rgba(143, 137, 137, 0.226);
+    border-radius: 20px;
+}
+.principal{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+img{
+    color:white;
 }
 .texto{
+    background-color: white;
     display: flex;
+    width:650px;
+    height: 90vh;
+    border-radius:20px;
+    overflow: hidden;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top:30px;
+    
 }
 textarea{
+    width:650px;
+    height: 90vh;
+    position:absolute;
     border-radius:20px;
+    background-color:rgba(0, 0, 0, 0);
+    font-size:38px;
+    padding:44px 60px 0 70px ;
+    line-height: 1.02em; 
+    color:black;
+    font-family: 'Sacramento', cursive;
+    border:none;
 }
 
 .Super1{
     height: 100vh;
-    width: 205vh;
+    width: 200vh;
     display: flex;
     justify-content: center;
     top: 0%;
@@ -52,8 +86,12 @@ textarea{
     justify-content: center;
     background-color: rgba(99, 93, 25, 1);
     border-radius: 10px;
-    width: 250px;
+    width: 350px;
     padding: 10px;
+    font-family: 'Sacramento', cursive;
+    font-size:25px;
+    line-height: .85em; 
+    
 }
 
 .notaGuardada p{
@@ -69,7 +107,11 @@ input{
     border: none;
     background: none;
     outline: 0px;
-    border-bottom: 1px solid  rgba(73, 73, 70, 0.541);  
+    width: 80%;
+    font-size:30px;
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 1px solid  rgba(73, 73, 70, 0.541); 
+     
 }
 
 .XContainer{
