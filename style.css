@@ -1,0 +1,32 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container{
+   
+    width: 100%;
+    height:100vh;
+    background: #0f2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c5364cc, #203a4394, #0f202759),url("img/fondo.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c5364d8, #203a439a, #0f202762),url("img/fondo.jpg"); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    font-family: 'Kaushan Script', cursive;
+    font-size:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:100px;
+}
+.container a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: all .2s ease;
+}
+.container a:hover{
+    text-shadow:
+    0 0 40px rgba(255, 255, 255, 0.329),
+    0 0 80px rgba(255, 255, 255, 0.322),
+    0 0 90px rgba(255, 255, 255, 0.288),
+    0 0 100px rgba(255, 255, 255, 0.322),
+    0 0 180px rgba(236, 236, 236, 0.274);
+}
