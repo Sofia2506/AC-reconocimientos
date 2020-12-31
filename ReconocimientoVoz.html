@@ -4,43 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voz</title>
-    <style>
-        .botones{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        body{
-            background: #283048;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-        }
-        .boton{
-            background-color: black;
-            padding: 12px;
-            margin: 15px;
-            color: white;
-            border-radius: 15px;
-            outline: none;
-            border: none;
-        }
-        .boton:hover{
-            background-color: rgba(73, 73, 70, 0.541);
-        }
-        .texto{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        textarea{
-            border-radius:20px;
-        }
-    </style>
+    <link rel="stylesheet" href="vozCss.css">
 </head>
 <body>
+
     <div class="botones">
         <button id="start" class="boton">Empezar a grabar</button>
         <button id="stop" class="boton">Terminar grabación</button>
@@ -50,8 +17,18 @@ background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, F
         <textarea id="texto" cols="55" rows="20"></textarea>
     </div> 
     <div class="botones">
-        <button id="guardar" class="boton">Guardar</button>
+        <a href="#notaGuardada"><button id="guardar" class="boton" >Guardar</button></a>
         <button id="limpiar" class="boton">Borrar</button>
+    </div>
+    <div class="Super1" id="notaGuardada">
+        <div class="notaGuardada">
+            <div class="XContainer"><a href="#" id="x"><img src="img\letra X.png" class="X"></a></div>
+            <input type="text" placeholder="Título opcional">
+            <p id="nota"></p>
+            <p id="fecha"></p>
+            <p id="hora"></p>
+            <a href="#"><button class="boton">Editar</button></a>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>
